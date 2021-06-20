@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="otherStudent.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <div class="container">
+        <h1>Other</h1>
+        <form name="vnsForm" onsubmit="return validateForm()">
+    <div>
+        <div>
+            <label class="form_label">Name<sup>*</sup> :</label>
+            <input name="name" class="other_form"  type="text" />
+        </div>
+        <div>
+            <label class="form_label">Father's Name<sup>*</sup> :</label>
+            <input name="fathersName" class="other_form"  type="text" />
+        </div>
+        <div>
+            <label class="form_label">Mobile Number<sup>*</sup> :</label>
+            <input name="number" class="other_form"  type="text" />
+        </div>
+        <div>
+            <label class="form_label">Email :</label>
+            <input class="other_form"  type="email" />
+        </div>
+        
+      </div>
+      <!-- <div class="dropdown" >
+        Course:  <button onclick="fun()" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select Course
+         </button>
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item" href="#">Diploma Engineering</a>
+           <a class="dropdown-item" href="#">B.Tech</a>
+           <a class="dropdown-item" href="#">M.Tech</a>
+           <a class="dropdown-item" href="#">Diploma Pharmacy</a>
+           <a class="dropdown-item" href="#">B. Pharm</a>
+           <a class="dropdown-item" href="#">M.Pharm</a>
+           <a class="dropdown-item" href="#">MBA</a>
+           <a class="dropdown-item" href="#">B.P.Ed</a>
+           <a class="dropdown-item" href="#">B.Ed</a>
+           <a class="dropdown-item" href="#">B.P.Es</a>
+           <a class="dropdown-item" href="#">M.P.Ed</a>
+           <a class="dropdown-item" href="#">D.EI.Ed</a>
+           <a class="dropdown-item" href="#">B.com</a>
+           <a class="dropdown-item" href="#">B.Sc.Nursing</a>
+           <a class="dropdown-item" href="#">GNM</a>
+           <a class="dropdown-item" href="#">OTHER</a>
+         </div>
+       </div> -->
+
+       <!--  -->
+       <label for="exampleDataList" class="form-label">Course<sup class="stric">*</sup> : </label>
+       <select id="selectCourse" name="dropdown">
+        <option value="">--Select Course--</option>
+         <option value="Diploma Engineering">Diploma Engineering</option>
+         <option value="B.Tech">B.Tech</option>
+         <option value="M.Tech">M.Tech</option>
+         <option value="Diploma Pharmacy">Diploma Pharmacy</option>
+         <option value="B. Pharm">B. Pharm</option>
+        <option value="M.Pharm">M.Pharm</option>
+        <option value="MBA">MBA</option>
+        <option value="B.P.Ed">B.P.Ed</option>
+        <option value="B.Ed">B.Ed</option>
+        <option value="B.P.Es">B.P.Es</option>
+         <option value="M.P.Ed">M.P.Ed</option>
+        <option value="D.EI.Ed">D.EI.Ed</option>
+         <option value="B.com">B.com</option>
+         <option value="B.Sc.Nursing">B.Sc.Nursing</option>
+        <option value="GNM">GNM</option>
+        <option value="OTHER">OTHER</option>
+        </select>
+       <!--  -->
+
+       <div>
+        <label class="form_label">Amount<sup>*</sup> :</label>
+        <input class="other_form" name="amount" type="text" />
+    </div>
+
+    <div>
+        <label class="form_label">Purpose<sup>*</sup> :</label>
+        <textarea name="purpose" style="vertical-align: top;" name="message" rows="3" cols="25" placeholder="Max 100 words"></textarea>
+        </div>
+        <div class="button-group">
+            <button type="submit" value="submit" class="btn_similar">Proceed for Payment</button>
+            <button class="btn_similar">Cancel</button>
+        </div>
+        <h2 id="pick"></h2>
+
+    </div>
+</form>
+        <script>
+//             const element = document.getElementById("selectCourse");
+//             const checkValue = element.options[element.selectedIndex].value;
+// const checkText = element.options[element.selectedIndex].text;
+//             element.addEventListener("change", (e) => {
+//   const value = e.target.value;
+//   const text = element.options[element.selectedIndex].text;
+ 
+//   if (value) {
+//     document.getElementById("pick").textContent = `Value Selected: ${value}`;
+//   } else {
+//     document.getElementById("pick").textContent = "";
+//   }
+// });
+
+        </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
