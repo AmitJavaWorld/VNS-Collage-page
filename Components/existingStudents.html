@@ -1,49 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Existing Students</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-      <div class="container">
-    <h1 >Existing Students</h1>
-    <div >
-    <label>Scholar Number:</label>
-        <input style="text-transform:uppercase" class="inpField" type="text">
+  <link rel="stylesheet" href="style.css">
+  <script src="otherStudent.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="col-sm-10 col-lg-12">
+      <img src="../assets/axis.jpg" alt="axis image"/>
+  </div>
+  <h2 style="margin-left: 10%;">VNS College</h2>
+  <form class="form-horizontal" onsubmit="return validateForm()">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="scolar">Scholar Number<sup>*</sup>:</label>
+      <div class="col-sm-10 col-lg-6">
+        <input type="text" style='text-transform:uppercase' class="form-control" id="scolar" placeholder="Scholar Number" name="scolar" >
       </div>
-
-    <div class="button-group">
-        <button class="exesting_student_button">Validate</button>
-        <button class="exesting_student_button">Cancel</button>
     </div>
-    <div> 
-        <label>Enquire URN:</label>
-            <input class="inpField" type="text" placeholder="URN Number">
-          </div>
-          
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-8 col-lg-6">
+        <button type="submit" class="btn btn_submit">Validate</button>
+        <button type="submit" class="btn btn-secondary">Cancel</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" style="color: #e75480;" for="urn">Enquire URN:</label>
+      <div class="col-sm-10 col-lg-10 col-lg-6">          
+        <input type="text" class="form-control" id="urn" placeholder="URN Number" name="urn">
+      </div>
+    </div>
+   
+    
+  </form>
+</div>
 
-          <form class="form-inline">
-            <!-- <div class="form-group mb-2">
-              <label for="staticEmail2" class="sr-only">Enquire URN:</label>
-              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Enquire URN:">
-            </div> -->
-            <!-- <div class="form-group mx-sm-3 mb-2">
-              <label>Enquire URN:</label>
-              <input type="text" class="form-control" id="inputPassword2" placeholder="Enquire URN:">
-            </div> -->
-          </form>
-
-        </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
